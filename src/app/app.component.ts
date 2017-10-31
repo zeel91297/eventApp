@@ -7,6 +7,12 @@ import { Config, Nav, Platform } from 'ionic-angular';
 import { FirstRunPage } from '../pages/pages';
 import { Settings } from '../providers/providers';
 
+import { StoriesPage } from "../pages/stories/stories";
+import { UsersPage } from "../pages/users/users";
+import { StoryDetailPage } from "../pages/story-detail/story-detail";
+import { CreateStoryPage } from "../pages/create-story/create-story";
+import { CreateCommunityPage } from "../pages/create-community/create-community";
+
 @Component({
   template: `<ion-menu [content]="content">
     <ion-header>
@@ -42,7 +48,12 @@ export class MyApp {
     { title: 'Master Detail', component: 'ListMasterPage' },
     { title: 'Menu', component: 'MenuPage' },
     { title: 'Settings', component: 'SettingsPage' },
-    { title: 'Search', component: 'SearchPage' }
+    { title: 'Search', component: 'SearchPage' },
+    { title: 'Stories', component: 'StoriesPage' },
+    { title: 'Users', component: 'UsersPage' },
+    { title: 'StoriesDetail', component: 'StoryDetailPage' },
+    { title: 'AddStory', component: 'CreateStoryPage' },
+    {title:'AddCommunity',component:'CreateCommunityPage'}
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

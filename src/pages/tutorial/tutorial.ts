@@ -32,13 +32,13 @@ export class TutorialPage {
         console.log('Loaded values', values);
         this.slides = [
           {
-            title: values.TUTORIAL_SLIDE1_TITLE,
-            description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1.png',
+            title: 'Discover Events Happening in Your City',
+            description:'',
+            image: 'assets/img/08248dc6-34f4-4d59-8383-f0f494c6b46f.png',
           },
           {
             title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
+            description: "Join Let's Meet and make your life Happening ",
             image: 'assets/img/ica-slidebox-img-2.png',
           },
           {

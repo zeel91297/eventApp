@@ -1,45 +1,45 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ pageTitle }}</ion-title>
+    <ion-title>Communities</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="addCommunity()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content>
 
-  <form [formGroup]="form" *ngIf="settingsReady">
-    <ion-list *ngIf="page == 'main'">
-      <ion-item>
-        <ion-label>{{ 'SETTINGS_OPTION1' | translate }}</ion-label>
-        <ion-toggle formControlName="option1"></ion-toggle>
-      </ion-item>
+    <ion-card>
+        
+            <img src="assets/img/ica-slidebox-img-2.png"/>
+        
+            <ion-card-content>
+              <ion-card-title>
+                Ionic
+              </ion-card-title>
+              <p>
+                Björk first came to prominence as one of the lead vocalists of the avant pop Icelandic sextet the Sugarcubes, but when...
+              </p>
+            </ion-card-content>
+        
+            <ion-item>
+              <ion-icon name='people' item-start style="color: #d03e84"></ion-icon>
+              Albums
+              <ion-badge item-end>9</ion-badge>
+            </ion-item>
 
-      <ion-item>
-        <ion-label>{{ 'SETTINGS_OPTION2' | translate }}</ion-label>
-        <ion-input formControlName="option2"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>{{ 'SETTINGS_OPTION3' | translate }}</ion-label>
-        <ion-select formControlName="option3">
-          <ion-option value="1" checked="true">1</ion-option>
-          <ion-option value="2">2</ion-option>
-          <ion-option value="3">3</ion-option>
-        </ion-select>
-      </ion-item>
-
-      <button ion-item [navPush]="subSettings" [navParams]="profileSettings">
-        {{ 'SETTINGS_PROFILE_BUTTON' | translate }}
-      </button>
-    </ion-list>
-
-    <ion-list *ngIf="page == 'profile'">
-      <ion-item>
-        <ion-label>{{ 'SETTINGS_OPTION4' | translate }}</ion-label>
-        <ion-input formControlName="option4"></ion-input>
-      </ion-item>
-    </ion-list>
-  </form>
+            <button ion-button block >Join Now</button>
+        
+            <!--<ion-item>
+              <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+              Followers
+              <ion-badge item-end>260k</ion-badge>
+            </ion-item>-->
+        
+          </ion-card>
 
 </ion-content>
