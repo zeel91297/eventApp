@@ -20,6 +20,8 @@ import { StoriesPage } from "../pages/stories/stories";
 import { StoryDetailPage } from "../pages/story-detail/story-detail";
 import { CreateStoryPage } from "../pages/create-story/create-story";
 import { CreateCommunityPage } from "../pages/create-community/create-community";
+import { ViewEventPage } from "../pages/view-event/view-event";
+import { ViewCommunityPage } from "../pages/view-community/view-community";
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -47,7 +49,9 @@ export function provideSettings(storage: Storage) {
     MyApp,
     StoryDetailPage,
     CreateStoryPage,
-    CreateCommunityPage
+    CreateCommunityPage,
+    ViewEventPage,
+    ViewCommunityPage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +71,9 @@ export function provideSettings(storage: Storage) {
     MyApp,
     StoryDetailPage,
     CreateStoryPage,
-    CreateCommunityPage
+    CreateCommunityPage,
+    ViewEventPage,
+    ViewCommunityPage
   ],
   providers: [
     Api,
