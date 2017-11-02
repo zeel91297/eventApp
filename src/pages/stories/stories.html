@@ -16,36 +16,41 @@
 <ion-content padding>
 
   <ion-fab top right edge>
-    <button ion-fab mini>
-      <ion-icon (click)="addStory()" name="add"></ion-icon>
+    <button ion-fab mini (click)="addStory()">
+      <ion-icon  name="add"></ion-icon>
     </button>
   </ion-fab>
+  <h1>My Stroy</h1>
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/img/marty-avatar.png">
+    </ion-avatar>
+    <h2>Jon Snow</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
 
-  <ion-content class="card-background-page">
-      
-        <ion-card>
-          <img (click)="viewStory()" src="assets/img/card-amsterdam.png"/>
-          <div class="card-title">Amsterdam</div>
-          <div class="card-subtitle"></div>
-        </ion-card>
+  <h1>Recent Updates</h1>
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/img/marty-avatar.png">
+    </ion-avatar>
+    <h2>Tyrion Lannister</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/img/marty-avatar.png">
+    </ion-avatar>
+    <h2>Arya Stark</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/img/marty-avatar.png">
+    </ion-avatar>
+    <h2>Khal Drogo</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
 
-        <ion-card>
-            <img src="assets/img/card-saopaolo.png"/>
-            <div class="card-title">São Paulo</div>
-            <div class="card-subtitle"></div>
-          </ion-card>
-      
-        <ion-card>
-          <img src="assets/img/card-sf.png"/>
-          <div class="card-title">San Francisco</div>
-          <div class="card-subtitle"></div>
-        </ion-card>
-      
-        <ion-card>
-          <img src="assets/img/card-madison.png"/>
-          <div class="card-title">Madison</div>
-          <div class="card-subtitle"></div>
-        </ion-card>
-      
-      </ion-content>
+
 </ion-content>
