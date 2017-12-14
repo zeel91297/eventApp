@@ -12,6 +12,7 @@ import { Items } from '../../providers/providers';
 export class SearchPage {
 
   currentItems: any = [];
+  //items:any=[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public items: Items) { }
 

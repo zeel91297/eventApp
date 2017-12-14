@@ -8,6 +8,11 @@
 
   <ion-navbar>
     <ion-title>Nearby Happening Stories</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addStory()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -15,12 +20,13 @@
 
 <ion-content padding>
 
-  <ion-fab top right edge>
+  <!--<ion-fab top right edge>
     <button ion-fab mini (click)="addStory()">
       <ion-icon  name="add"></ion-icon>
     </button>
-  </ion-fab>
-  <h1>My Stroy</h1>
+  </ion-fab>-->
+  
+  <h2>My Stroy</h2>
   <ion-item>
     <ion-avatar item-start>
       <img src="assets/img/marty-avatar.png">
@@ -29,7 +35,7 @@
     <p>November 5, 1955</p>
   </ion-item>
 
-  <h1>Recent Updates</h1>
+  <h2>Recent Updates</h2>
   <ion-item>
     <ion-avatar item-start>
       <img src="assets/img/marty-avatar.png">
